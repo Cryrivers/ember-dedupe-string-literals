@@ -1,23 +1,23 @@
 /* jshint node: true */
 'use strict';
 
-var BabelStringObfuscator = require('./lib/BabelStringObfuscator');
+var BabelDedupeStringLiterals = require('./lib/BabelDedupeStringLiterals');
 
 module.exports = {
   name: 'ember-string-obfuscator',
   included: function(app) {
     this._super.included.apply(this, arguments);
 
-    var obfuscator = BabelStringObfuscator();
+    var dedupeStringLiterals = BabelDedupeStringLiterals();
 
-    obfuscator.baseDir = function() {
+    dedupeStringLiterals.baseDir = function() {
       return __dirname;
     };
 
     if (app.options.babel.plugins) {
-      app.options.babel.plugins.push(obfuscator);
+      app.options.babel.plugins.push(dedupeStringLiterals);
     } else {
-      app.options.babel.plugins = [obfuscator];
+      app.options.babel.plugins = [dedupeStringLiterals];
     }
   }
 };

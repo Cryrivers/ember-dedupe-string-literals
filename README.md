@@ -1,11 +1,11 @@
-# Ember-string-obfuscator
+# Ember-dedupe-string-literals
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-string-obfuscator`
+* `cd ember-dedupe-string-literals`
 * `npm install`
 * `bower install`
 
