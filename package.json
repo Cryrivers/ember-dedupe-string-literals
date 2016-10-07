@@ -1,7 +1,7 @@
 {
   "name": "ember-dedupe-string-literals",
-  "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0-beta.1",
+  "description": "Dedupe strings as new variable declarations at the top level for your Ember apps",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,10 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cryrivers/ember-dedupe-string-literals"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
