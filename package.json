@@ -1,6 +1,6 @@
 {
   "name": "ember-dedupe-string-literals",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Dedupe strings as new variable declarations at the top level for your Ember apps",
   "directories": {
     "doc": "doc",
