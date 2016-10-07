@@ -13,6 +13,7 @@ module.exports = {
       this.dedupeStringLiterals.minimumStringLength = this.dedupeStringLiterals.minimumStringLength || 0;
       this.dedupeStringLiterals.dedupeObjectKeyString = this.dedupeStringLiterals.dedupeObjectKeyString || false;
       this.dedupeStringLiterals.dedupeObjectKeyIdentifier = this.dedupeStringLiterals.dedupeObjectKeyIdentifier || false;
+      this.dedupeStringLiterals.dedupeMemberExpression = this.dedupeStringLiterals.dedupeMemberExpression || false;
     }
   },
   included: function(app) {
